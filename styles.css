@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(20, 21, 25, 255);
+    font-family: 'Overpass', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card1, .card2 {
+    height: 410px;
+    width: 410px;
+    background-image: linear-gradient(rgba(35, 42, 52, 255), rgba(23, 30, 40, 255));
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+#rating {
+    display: flex;
+    list-style: none;
+    width: 330px;
+    justify-content: space-between;
+    color: hsl(217, 12%, 63%);
+    padding: 0;
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+li {
+    background-color: rgba(38, 47, 56, 255);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+p {
+    width: 325px;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.6rem;
+    font-size: 14px;
+}
+
+.imgStar {
+    padding: 1rem;
+    background-color: rgba(38, 47, 56, 255);
+    border-radius: 50%;
+}
+
+h1 {
+    color: white;
+    font-size: 1.75rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.submit {
+    width: 100%;
+    height: 3rem;
+    border-radius: 1.8rem;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    ;
+}
+
+.rating-active {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.choice:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+
+}
+
+.card2 {
+    display: none;
+}
+
+.imgThankyou {
+    width: 10rem;
+    margin: auto;
+    display: block;
+    margin-top: 2rem;
+}
+
+.outer {
+    color: hsl(25, 97%, 53%);
+    background-color: rgba(38, 47, 56, 255);
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+    margin: auto;
+    width: 190px;
+    text-align: center;
+    display: block;
+    margin-top: 2.5rem;
+}
+
+h2 {
+    color: white;
+    width: 145px;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+}
+
+.secondP {
+    width: 340px;
+    text-align: center;
+    margin: auto;
+    margin-top: .8rem;
+    font-size: .94rem;
+}
+
+@media (max-width: 375px) {
+    .card1, .card2 {
+        height: 355px;
+        width: 325px;
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        margin-top: 1.2rem;
+    }
+
+    #rating {
+        margin: 2rem 0;
+    }
+}
